@@ -417,14 +417,18 @@
             // Level 3: Line Jumps
             {
                 name: "Line Jumps",
-                instructions: "Use gg to go to the first line, and G to go to the last line. Go to the last character of the last line.",
+                // instructions: "Use gg to go to the first line, and G to go to the last line. Go to the last character of the last line.",
+				instructions: "Используйте gg, чтобы перейти к первой строке, и G, чтобы перейти к последней строке. Перейдите к последнему символу последней строки.",
                 initialContent: [
-                    "This is the first line. Use 'gg' to come here.",
+                    // "This is the first line. Use 'gg' to come here.",
+					"Это первая строка. Используйте 'gg', чтобы перейти сюда.",
                     "...",
                     "...",
                     "...",
-                    "This is the last line. Use 'G' to jump here.",
+                    // "This is the last line. Use 'G' to jump here.",
+					"Это последняя строка. Используйте 'G', чтобы перейти сюда.",
                     "The target is on the word 'here'."
+					// "Цель находится на слове 'here'."
                 ],
                 target: { row: 5, col: 32 }, // Target is the '.' at the end of the line
                 setup: () => { cursor = { row: 2, col: 0 }; commandHistory = ''; }
