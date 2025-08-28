@@ -539,11 +539,14 @@
             // Level 9: Change Word (cw)
             {
                 name: "Change Word (cw)",
-                instructions: "Use cw to change the word 'bad' into 'good'. Press Esc when done.",
+                // instructions: "Use cw to change the word 'bad' into 'good'. Press Esc when done.",
+                instructions: "Используйте cw, чтобы изменить слово 'плохой' на 'хороший'. По завершении нажмите клавишу Esc.",
                 initialContent: [
-                    "This is a bad example."
+                    // "This is a bad example."
+                    "Это плохой пример."
                 ],
-                targetText: { line: 0, text: "This is a good example." },
+                // targetText: { line: 0, text: "This is a good example." },
+                targetText: { line: 0, text: "Это хороший пример." },
                 setup: () => { cursor = { row: 0, col: 10 }; }
             },
             // Level 10: Delete to End (D) and Replace (r)
