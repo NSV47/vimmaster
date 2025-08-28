@@ -477,18 +477,26 @@
             // Level 6: Yank & Put
             {
                 name: "Yank & Put (Copy/Paste)",
-                instructions: "Use yy to yank (copy) a line and p to put (paste) it. Duplicate the second line.",
+                // instructions: "Use yy to yank (copy) a line and p to put (paste) it. Duplicate the second line.",
+				instructions: "Используйте yy, чтобы вырвать (скопировать) строку, и p, чтобы вставить ее. Продублируйте вторую строку.",
                 initialContent: [
-                    "Let's copy and paste.",
-                    "Yank this line!",
-                    "And put it below this line.",
+                    // "Let's copy and paste.",
+					"Давайте скопируем и вставим.",
+                    // "Yank this line!",
+					"Скопируйте эту строку!",
+                    // "And put it below this line.",
+					"И поместите её ниже этой строки.",
                     ""
                 ],
                 targetContent: [
-                    "Let's copy and paste.",
-                    "Yank this line!",
-                    "And put it below this line.",
-                    "Yank this line!",
+                    // "Let's copy and paste.",
+                    "Давайте скопируем и вставим.",
+					// "Yank this line!",
+                    "Скопируйте эту строку!",
+					// "And put it below this line.",
+                    "И поместите её ниже этой строки.",
+					// "Yank this line!",
+					"Скопируйте эту строку!",
                 ],
                 setup: () => { cursor = { row: 1, col: 0 }; commandHistory = ''; }
             },
