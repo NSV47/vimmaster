@@ -436,15 +436,21 @@
             // Level 4: Insert Mode
             {
                 name: "Insert Mode",
-                instructions: "Press 'a' to append after the cursor. Type ' is awesome!' and press Esc to return to NORMAL mode.",
-                initialContent: [
-                    "VIM has multiple modes. You've been in NORMAL mode.",
-                    "Press 'a' to append after the cursor and start typing.",
-                    "When you're done, press 'Escape' to go back.",
-                    "Your task: complete the sentence below.",
-                    "Learning VIM"
+                // instructions: "Press 'a' to append after the cursor. Type ' is awesome!' and press Esc to return to NORMAL mode.",
+                instructions: "Нажмите 'a', чтобы добавить после курсора. Введите '- это потрясающе!' и нажмите Esc, чтобы вернуться в обычный режим.",
+				initialContent: [
+                    // "VIM has multiple modes. You've been in NORMAL mode.",
+					"У VIM есть несколько режимов. Вы работали в обычном режиме.",
+                    // "Press 'a' to append after the cursor and start typing.",
+					"Нажмите 'a' для добавления после курсора и начните печатать.",
+                    // "When you're done, press 'Escape' to go back.",
+					"Когда вы закончите, нажмите 'Escape', чтобы вернуться назад.",
+                    // "Your task: complete the sentence below.",
+					"Ваша задача: завершить приведенное ниже предложение.",
+                    // "Learning VIM"
+					"Изучение VIM"
                 ],
-                targetText: { line: 4, text: "Learning VIM is awesome!" },
+                targetText: { line: 4, text: "Изучение VIM - это потрясающе!" },
                 setup: () => { cursor = { row: 4, col: 11 }; }
             },
              // Level 5: Delete Basics
