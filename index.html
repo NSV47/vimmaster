@@ -502,13 +502,16 @@
             },
             // Level 7: Line Start/End
             {
-                name: "Line Bounds (0 and $)",
-                instructions: "Use 0 to jump to start of line and $ to jump to end. Move to the last character of the first line.",
+                name: "Line Bounds (0 and $)", // Границы линий
+                // instructions: "Use 0 to jump to start of line and $ to jump to end. Move to the last character of the first line.",
+                instructions: "Используйте 0, чтобы перейти к началу строки, и $, чтобы перейти к концу. Перейдите к последнему символу первой строки.",
                 initialContent: [
-                    "Jump to the start and end of this line.",
-                    "Practice makes perfect."
+                    // "Jump to the start and end of this line.", // 39
+                    "Перейдите к началу и концу этой строки.", // 39
+                    // "Practice makes perfect."
+                    "Практика создаёт совершенство."
                 ],
-                // The first line length is 39, last character index is length - 1 = 38
+                // The first line length is 39, last character index is length - 1 = 38 // Длина первой строки равна 39, индекс последнего символа равен длине - 1 = 38
                 target: { row: 0, col: 38 },
                 setup: () => { cursor = { row: 0, col: 0 }; }
             },
