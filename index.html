@@ -517,16 +517,22 @@
             },
             // Level 8: Append and Open Lines
             {
-                name: "Append and Open Lines",
-                instructions: "Use a to append after cursor. Use o to open a new line below, and O to open above. Add a new line between the two lines that reads 'Inserted here'.",
+                name: "Append and Open Lines", // Добавляйте и открывайте строки
+                // instructions: "Use a to append after cursor. Use o to open a new line below, and O to open above. Add a new line between the two lines that reads 'Inserted here'.",
+                instructions: "Используйте a, чтобы добавить после курсора. Используйте o, чтобы открыть новую строку ниже, и O, чтобы открыть выше. Добавьте новую строку между двумя строками с надписью 'Вставлено сюда'.",
                 initialContent: [
-                    "First line.",
-                    "Second line."
+                    // "First line.",
+                    "Первая строка.",
+                    // "Second line."
+                    "Вторая строка."
                 ],
                 targetContent: [
-                    "First line.",
-                    "Inserted here",
-                    "Second line."
+                    // "First line.",
+                    "Первая строка.",
+                    // "Inserted here",
+                    "Вставлено сюда",
+                    // "Second line."
+                    "Вторая строка."
                 ],
                 setup: () => { cursor = { row: 0, col: 5 }; }
             },
