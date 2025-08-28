@@ -456,15 +456,21 @@
              // Level 5: Delete Basics
             {
                 name: "Delete Basics",
-                instructions: "Use dd to delete the full middle line. Then use dw to remove the word 'mistake' on the last line. You can use x to delete a single character if needed.",
+                // instructions: "Use dd to delete the full middle line. Then use dw to remove the word 'mistake' on the last line. You can use x to delete a single character if needed.",
+				instructions: "Используйте dd, чтобы полностью удалить среднюю строку. Затем используйте dw, чтобы удалить слово 'ошибка' в последней строке. При необходимости вы можете использовать x для удаления отдельного символа.",
                 initialContent: [
-                    "Keep this line.",
-                    "Delete this entire line.",
-                    "Fix this mistake here."
+                    // "Keep this line.",
+					"Держись этой линии.",
+                    // "Delete this entire line.",
+					"Удалите всю эту строку целиком.",
+                    // "Fix this mistake here."
+					"Исправьте эту ошибку здесь."
                 ],
                 targetContent: [
-                    "Keep this line.",
-                    "Fix this here."
+                    // "Keep this line.",
+					"Держись этой линии.",
+                    // "Fix this here."
+					"Исправьте эту здесь."
                 ],
                 setup: () => { cursor = { row: 0, col: 0 }; commandHistory = ''; }
             },
