@@ -359,11 +359,16 @@
             // Level 1: Exiting Vim (fun intro)
             {
                 name: "How to Exit (Ex Commands)",
-                instructions: "Type :q to quit, or :wq to write and quit. Press Enter after the command.",
-                initialContent: [
+				// name: "Как выйти (команды Ex)",
+                // instructions: "Type :q to quit, or :wq to write and quit. Press Enter after the command.",
+                instructions: "Введите :q, чтобы завершить работу, или :wq, чтобы записать и завершить работу. Нажмите Enter после команды.",
+				initialContent: [
                     "Welcome to VIM Master!",
-                    "Most searched question: how to exit Vim?",
-                    "Try typing :q and press Enter (or :wq)."
+					// "Welcome to VIM Master!",
+                    // "Most searched question: how to exit Vim?",
+					"Самый популярный вопрос: как выйти из Vim?",
+                    // "Try typing :q and press Enter (or :wq)."
+					"Попробуйте ввести :q и нажмите Enter (или :wq)."
                 ],
                 exCommands: ["q", "wq"],
                 setup: () => { cursor = { row: 0, col: 0 }; commandHistory = ''; }
@@ -371,14 +376,20 @@
             // Level 1: Basic Movement
             {
                 name: "Basic Movement",
-                instructions: "Use h, j, k, l to move the cursor. Reach the target character '$'.",
+                // instructions: "Use h, j, k, l to move the cursor. Reach the target character '$'.",
+				instructions: "Используйте h, j, k, l для перемещения курсора. Найдите нужный символ '$'.",
                 initialContent: [
-                    "Move with h(left), j(down), k(up), l(right).",
-                    "Your cursor starts here.",
+                    // "Move with h(left), j(down), k(up), l(right).",
+					"Двигайтесь с помощью h (влево), j (вниз), k (вверх), l (вправо).",
+                    // "Your cursor starts here.",
+					"Ваш курсор начинается здесь.",
                     "",
-                    "The goal is to navigate to the dollar sign.",
-                    "Practice moving around the text.",
-                    "Once you are comfortable, move to the '$'."
+                    // "The goal is to navigate to the dollar sign.",
+					"Цель состоит в том, чтобы перейти к знаку доллара.",
+                    // "Practice moving around the text.",
+					"Потренируйтесь перемещаться по тексту.",
+                    // "Once you are comfortable, move to the '$'."
+					"Как только вы почувствуете себя комфортно, переходите к '$'."
                 ],
                 target: { row: 5, col: 39 },
                 setup: () => { cursor = { row: 1, col: 5 }; }
@@ -387,12 +398,18 @@
             {
                 name: "Word Movement",
                 instructions: "Use w (next word), b (back), e (end of word). Get to the end of the 'destination' word.",
-                initialContent: [
+                // instructions: "Используйте w (следующее слово), b (назад), e (конец слова). Дойдите до конца слова "пункт назначения".",
+				initialContent: [
                     "Jumping between words is much faster.",
+					// "Переключение между словами происходит намного быстрее.",
                     "Use 'w' to jump forwards to the start of the next word.",
+					// "Используйте "w", чтобы перейти к началу следующего слова.",
                     "Use 'b' to jump backwards to the start of the previous word.",
+					// "Используйте "b", чтобы вернуться к началу предыдущего слова.",
                     "Use 'e' to jump to the end of the current word.",
+					// "Используйте букву "е", чтобы перейти к концу текущего слова.",
                     "Find the ultimate destination."
+					// "Найдите конечный пункт назначения."
                 ],
                 target: { row: 4, col: 28 }, // Target is the 'n' in destination
                 setup: () => { cursor = { row: 0, col: 0 }; }
